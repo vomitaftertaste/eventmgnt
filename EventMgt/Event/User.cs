@@ -5,8 +5,9 @@ using System;
 
 namespace Event
 {
-    public static class User
+    public class User
     {
+
         public static string login(String username, String password)
         {
             if (username != "user")
