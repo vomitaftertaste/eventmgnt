@@ -19,15 +19,14 @@ namespace Event
 
             CourseRep rep = new CourseRep();
 
-            Assert.Equals(course, rep.GetCourseDetail(1));
+            Assert.AreEqual(course, rep.GetCourseDetail(1));
         }
 
         [Test]
         public void GetWrongCourseDetail()
         {
             CourseRep rep = new CourseRep();
-
-            Assert.Equals(null, rep.GetCourseDetail(0));
+            Assert.AreEqual(null, rep.GetCourseDetail(0));
         }
     }
 }
