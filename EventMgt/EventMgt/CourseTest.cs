@@ -21,5 +21,13 @@ namespace EventMgt
 
             Assert.Equals(course, rep.GetCourseDetail(1));
         }
+
+        [Test]
+        public void GetWrongCourseDetail()
+        {
+            CourseRep rep = new CourseRep();
+
+            Assert.Equals(null, rep.GetCourseDetail(0));
+        }
     }
 }
